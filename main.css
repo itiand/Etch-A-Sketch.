@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: red;
   border-radius: 20px;
   
@@ -41,6 +41,7 @@ body {
 }
 
 #canvas {
+
   display: flex;
   justify-content: center;
 }
