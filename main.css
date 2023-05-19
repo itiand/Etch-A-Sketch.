@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* .container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: red;
+} */
+
+.top-panel {
+  margin-bottom: 1rem;
+}
+
+#title {
+  margin: 0.5rem;
+}
+
+#etch-sketch {
+  height: 75vh;
+  width: 65vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  border-radius: 20px;
+  
+  color: rgb(233, 233, 233);
+}
+
+#canvas {
+  display: flex;
+  justify-content: center;
+}
+
+#controls {
+  margin: 1rem 0;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  border: 0.2px dotted rgb(199, 189, 189);
+  background-color: #D8D8D8;
+}
+
+/* .square:hover {
+  background-color: rgb(112, 112, 112);
+} */
