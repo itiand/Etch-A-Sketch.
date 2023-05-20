@@ -14,19 +14,19 @@
       <h1 id="title">Etch-A-Sketch</h1>
       <p style="font-style: italic;">swirl swirl swirl til your heart is content</p>
     </div>
-    <div class="main-container">
-      <div class="left-panel">
-      </div>
-      <div id="canvas">
-      </div>
+    <div id="canvas">
     </div>
     <div id="controls">
       <div id="modes">
         <p>Modes: </p>
-        <button class="bw-classic">B&W</button>
-        <button class="color">Color</button>
+        <button id="classic">B&W</button>
+        <button id="color">Color</button>
       </div>
       <button id="erase">Erase</button>
+      <div id="sizeCtrl">
+        <input type="number" id="myNumber" min="2" max="100">
+        <button id="changeSizeBtn">Change Size</button>
+      </div>
     </div>  
   </div>
   <script src="app.js"></script>

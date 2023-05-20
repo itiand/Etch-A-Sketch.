@@ -11,7 +11,10 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Arial", sans-serif;
+  background-color: rgb(51, 70, 107);
 }
+
+
 
 /* .container {
   width: 80%;
@@ -25,6 +28,7 @@ body {
 
 #title {
   margin: 0.5rem;
+  padding-top: 1rem;
 }
 
 #etch-sketch {
@@ -34,16 +38,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: red;
+  background-color: rgb(220, 7, 7);
   border-radius: 20px;
   
   color: rgb(233, 233, 233);
 }
 
 #canvas {
-
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  padding: 0 1.5rem;
 }
 
 #controls {
@@ -51,8 +57,6 @@ body {
 }
 
 .square {
-  width: 16px;
-  height: 16px;
   border: 0.2px dotted rgb(199, 189, 189);
   background-color: #D8D8D8;
 }
