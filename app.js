@@ -5,8 +5,8 @@ const eraseBtn = document.getElementById('erase')
 
 const colorBtn = document.getElementById('color')
 const classicBtn = document.getElementById('classic')
-let colorMode = 'classic';
 
+let colorMode = 'classic';
 
 
 function populateSquare(size = 16) {
@@ -25,7 +25,7 @@ function getRandomColor() {
   const b = Math.floor(Math.random() * 256); // Random blue value between 0 and 255
 
   const color = `rgb(${r}, ${g}, ${b})`; // Construct the RGB color string
-
+  
   return color;
 }
 
@@ -33,7 +33,7 @@ function getRandomColor() {
 //add event listener on on the button
 //when clicked hover change pass in the value
 function hoverChange() {
-  if (colorMode === 'classic') this.style.backgroundColor = 'rgb(112, 112, 112)';
+  if (colorMode === 'classic') this.style.backgroundColor = `rgb(112, 112, 112)`;
   if (colorMode === 'color') this.style.backgroundColor = getRandomColor();
 }
 function eraseCanvas() {
@@ -42,6 +42,7 @@ function eraseCanvas() {
     square.style.backgroundColor = '#D8D8D8'
   })
 }
+
 
 function changeSize(size) {
   if(size === '') {size = 16}
@@ -79,10 +80,9 @@ turnOnEtch()
 
 changeSizeBtn.addEventListener('click', () => changeSize(sizeInput.value))
 colorBtn.addEventListener('click', () => colorMode = 'color')
-classicBtn.addEventListener('click', () => color = 'classic')
+classicBtn.addEventListener('click', () => colorMode = 'classic')
 eraseBtn.addEventListener('click', eraseCanvas)
 
 
-//rainbow mode - changes color 
 
 // alpha mode

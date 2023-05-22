@@ -15,6 +15,19 @@ body {
 }
 
 
+button {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: rgb(104, 104, 104);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(224, 224, 224)
+}
+
 
 /* .container {
   width: 80%;
@@ -49,18 +62,48 @@ body {
   width: 500px;
   height: 500px;
   display: grid;
-  padding: 0 1.5rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+}
+.square {
+  border: 0.2px dotted rgb(199, 189, 189);
+  background-color: #D8D8D8;
 }
 
 #controls {
   margin: 1rem 0;
 }
 
-.square {
-  border: 0.2px dotted rgb(199, 189, 189);
-  background-color: #D8D8D8;
+#modes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
+#modes button,
+#modes p {
+  margin-right: 0.5rem;
+}
+
+#myNumber {
+  outline: none;
+  border-radius: 4px;
+  border:none;
+  width: 90px;
+  padding:0.5rem 0.2rem;
+  margin-right: 0.2rem;
+}
+
+#sizeCtrl {
+  display: flex;
+  justify-content: center;
+}
+
+
+#changeSizeBtn {
+  margin-right: 1rem;
+}
 /* .square:hover {
   background-color: rgb(112, 112, 112);
 } */
